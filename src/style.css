@@ -58,10 +58,22 @@ h1 span{
     height: 150px;
 }
 @media(max-width :900px) {
+    h1 span{
+        font-size: 60px;
+    }
+    h1{
+        font-size: 60px;
+    }
     h2{
         text-align: center;
     }
     p{
         text-align: center;
+    }
+    .hero p{
+        font-size: 20px;
+    }
+    .hero para{
+        font-size: 10px;
     }
 }
