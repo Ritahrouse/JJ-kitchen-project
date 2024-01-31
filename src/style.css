@@ -35,9 +35,7 @@ h2{
 }
 
 .hero{
-    background-image: url('file:///C:/Users/KIIT/OneDrive/Desktop/JJ-kitchen-project/src/images/bb1.jpg');
-    background-size: cover;
-    background-position: center;
+   
     padding: 40px;
     text-align: center;
     background-color: #f3bb58;
@@ -58,4 +56,12 @@ h1 span{
 .image1{
     width: 100%;
     height: 150px;
+}
+@media(max-width :900px) {
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
 }
