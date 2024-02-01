@@ -57,6 +57,16 @@ h1 span{
     width: 100%;
     height: 150px;
 }
+.about{
+    color: #9f6f41;
+}
+.service{
+    width: 80%;
+        height: 300px;
+}
+.card1{
+    width:80%;
+}
 @media(max-width :900px) {
     h1 span{
         font-size: 60px;
