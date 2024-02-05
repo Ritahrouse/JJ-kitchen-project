@@ -107,4 +107,19 @@ h1 span{
     .hero para{
         font-size: 10px;
     }
+    .card{
+        text-align: center;
+    }
+    .buttonservice{
+        text-align: center;
+    }
+    .mag{
+        font-size: 45px;
+    }
+    .para1{
+        font-size:10px ;
+    }
+    .mag span{
+        font-size: 45px;
+    }
 }
