@@ -36,9 +36,10 @@ h2{
 
 .hero{
    
-    padding: 40px;
+   
     text-align: center;
     background-color: #f3bb58;
+
 }
 h1 span{
     font-style: italic;
@@ -66,6 +67,26 @@ h1 span{
 }
 .card1{
     width:80%;
+}
+.button1{
+    background-color: #9f6f41;
+    color: white;
+    border: none;
+}
+.button:hover{
+    background-color: #763c05;
+}
+.logo{
+    width: 200px;
+    height: 70px;
+    padding: 5px;
+    padding-right: 80px;
+}
+.bar{
+    background-color:#f3bb58;
+}
+.mag{
+    margin-top: 85px;
 }
 @media(max-width :900px) {
     h1 span{
