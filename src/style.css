@@ -6,17 +6,27 @@ font-family: 'Salsa',
 cursive;*/
 /*background-color: #9f6f41;*/
 body {
+   
 
 }
 h1{
     font-size: 96px;
     font-family: 'Merriweather',serif;
-    color: white;
+    color: #763c05;
 }
 h2{
     font-family: 'Salsa', cursive;
     text-align: center;
     color: #9f6f41;
+}
+ul{
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    padding-left: 0px;
+    opacity: 90%;
+}
+ul li{
+    margin: 10px;
 }
 .hero p{
     font-size: 30px;
@@ -36,9 +46,8 @@ h2{
 
 .hero{
    
-   
     text-align: center;
-    background-color: #f3bb58;
+   
 
 }
 h1 span{
@@ -48,6 +57,11 @@ h1 span{
 .button{
     background-color: white;
     color:black;
+    border: none;
+}
+.button2 {
+    background-color:#f3bb58;
+    color: white;
     border: none;
 }
 .image{
@@ -74,7 +88,10 @@ h1 span{
     border: none;
 }
 .button:hover{
-    background-color: #763c05;
+    background-color: #7b3c01;
+}
+.button2:hover {
+    background-color: #7b3c01;
 }
 .logo{
     width: 200px;
@@ -83,11 +100,43 @@ h1 span{
     padding-right: 80px;
 }
 .bar{
-    background-color:#f3bb58;
+    background-color:white;
 }
 .mag{
     margin-top: 85px;
 }
+footer{
+    background-color: #a35103;
+    color: white;
+    padding: 30px;
+    
+}
+.icon{
+    color: #f3bb58;
+        margin: 20px;
+        font-size: larger;
+}
+footer .social-links a{
+   color: #f3bb58;
+    margin: 20px;
+}
+.email-link a{
+    opacity: 90%;
+    color: white;
+    text-decoration: none;
+    opacity: 90%;
+   
+}
+footer p{
+    opacity: 90%;
+}
+.logo1{
+    width: 100px;
+        height: 70px;
+        padding: 5px;
+    
+}
+
 @media(max-width :900px) {
     h1 span{
         font-size: 60px;
@@ -121,5 +170,8 @@ h1 span{
     }
     .mag span{
         font-size: 45px;
+    }
+    footer .img{
+       
     }
 }
