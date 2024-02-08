@@ -16,6 +16,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/9e19d6fac3.js" crossorigin="anonymous"></script>
+        <script src="src/index.js"></script>
     <title>Our services</title>
     <title>JJ'S kitchen Menu</title>
 </head>
@@ -54,8 +56,8 @@
     <h1 class="about text-center mag">MENU</h1>
     <h2 class="mt-5">Snacks</h2>
     <div class="container mt-5 text-center">
-        <div class="row">
-            <div class="col-sm-3 ">
+        <div class="row ">
+           <!--<div class="col-sm-3 m-5">
                 <div class="card " style="width: 18rem;">
                     <img src="images/chickenball.jpeg" class="card-img-top img-fluid  image" alt="chickenballs" >
                     <div class="card-body">
@@ -65,47 +67,67 @@
                         <a href="#" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="col-sm-3 ">
-                <div class="card" style="width: 18rem;">
+                <div class="card w-100 h-auto shadow-lg rounded" style="width: 18rem;">
                     <img src="images/kebeeh.jpg" class="card-img-top img-fluid  image" alt="kebbeh" >
-                    <div class="card-body">
-                        <h5 class="card-title">Kebbeh</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
+                    <div class="card-body h-auto">
+                        <div class=" d-flex justify-content-center">
+                        <h5 class="card-title ">Kebbeh<span></span></h5>
+                     <p class="price-tag">-$50</p>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3 ">
-            <div class="card " style="width: 18rem;">
+            <div class="card w-100 h-auto shadow-lg rounded " style="width: 18rem;">
                 <img src="images/samosa.jpg" class="card-img-top img-fluid  image" alt="samosa" >
-                <div class="card-body">
+                <div class="card-body h-auto">
+                    <div class=" d-flex justify-content-center">
                     <h5 class="card-title">Samosa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
-                    <a href="#" class="btn btn-primary">Order Now</a>
+                    <p class="price-tag">-$45</p>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
                 </div>
             </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card " style="width: 18rem;">
-                    <img src="images/capati.jpg" class="card-img-top img-fluid  image" alt="chapati" >
-                    <div class="card-body">
-                        <h5 class="card-title">Chapati</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
+            <div class="col-sm-3 ">
+                <div class="card w-100 h-auto shadow-lg rounded item" style="width: 18rem;">
+                    <img src="images/chickenball.jpeg" class="card-img-top img-fluid  image" alt="chickenball">
+                    <div class="card-body h-auto">
+                        <div class=" d-flex justify-content-center">
+                            <h5 class="card-title">Cicken balls</h5>
+                            <p class="price-tag">-$75</p>
+                        </div>
+            
+                        <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
                     </div>
                 </div>
             </div>
+            <div class="col-sm-3 ">
+                <div class="card w-100 h-auto shadow-lg rounded item" style="width: 18rem;">
+                    <img src="images/capati.jpg" class="card-img-top img-fluid  image" alt="capati">
+                    <div class="card-body h-auto">
+                        <div class=" d-flex justify-content-center">
+                            <h5 class="card-title">Chapati</h5>
+                            <p class="price-tag">-$55</p>
+                        </div>
+            
+                        <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
     <h2 class="mt-5">Food</h2>
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-sm-3 ">
-                <div class="card " style="width: 18rem;">
+        <div class="row ">
+            <!-- <div class="col-sm-3 ">
+               <div class="card " style="width: 18rem;">
                     <img src="images/jollof-rice-square.jpg" class="card-img-top img-fluid  image" alt="Jollof">
                     <div class="card-body">
                         <h5 class="card-title">Jollof Rice</h5>
@@ -115,51 +137,68 @@
                         <a href="#" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3 ">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/friedrice.jpeg" class="card-img-top img-fluid  image" alt="friedrice">
-                    <div class="card-body">
-                        <h5 class="card-title">Fried rice</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
+            </div>-->
+        <div class="col-sm-3  ">
+            <div class="card w-100 h-auto shadow-lg rounded item" style="width: 18rem;">
+                <img src="images/bulgur.jpg" class="card-img-top img-fluid  image" alt="bulgur">
+                <div class="card-body h-auto text-center">
+                    <div class=" d-flex justify-content-center ">
+                        <h5 class="card-title ">Bulgur<span></span></h5>
+                        <p class="price-tag">-$100</p>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-3 ">
-                <div class="card " style="width: 18rem;">
-                    <img src="images/couscous.jpg" class="card-img-top img-fluid  image" alt="couscous">
-                    <div class="card-body">
-                        <h5 class="card-title">Couscous</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card " style="width: 18rem;">
-                    <img src="images/bulgur.jpg" class="card-img-top img-fluid  image" alt="bulgur">
-                    <div class="card-body">
-                        <h5 class="card-title">Bulgur</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
-                    </div>
+                    <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="col-sm-3 ">
+            <div class="card w-100 h-auto shadow-lg rounded item" style="width: 18rem;">
+                <img src="images/couscous.jpg" class="card-img-top img-fluid  image" alt="couscous">
+                <div class="card-body h-auto text-center">
+                    <div class=" d-flex justify-content-center ">
+                        <h5 class="card-title">Couscous</h5>
+                        <p class="price-tag">-$90</p>
+                    </div>
+        
+                    <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="card w-100 h-auto shadow-lg rounded item" style="width: 18rem;">
+                <img src="images/friedrice.jpeg" class="card-img-top img-fluid  image" alt="friedrice">
+                <div class="card-body h-auto text-center">
+                    <div class=" d-flex justify-content-center">
+                        <h5 class="card-title">Fried rice</h5>
+                        <p class="price-tag">-$85</p>
+                    </div>
+        
+                    <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="card w-100 h-auto shadow-lg rounded item" style="width: 18rem;">
+                <img src="images/jollof-rice-square.jpg" class="card-img-top img-fluid  image" alt="jollof">
+                <div class="card-body h-auto text-center">
+                    <div class=" d-flex justify-content-center">
+                        <h5 class="card-title">Jollof</h5>
+                        <p class="price-tag">-$120</p>
+                    </div>
+        
+                    <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
 
 
     <h2 class="mt-5">Sauce</h2>
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-sm-3 ">
+            <!--<div class="col-sm-3 ">
                 <div class="card " style="width: 18rem;">
                     <img src="images/friedokra.jpg" class="card-img-top img-fluid  image" alt="Friedokra">
                     <div class="card-body">
@@ -170,40 +209,55 @@
                         <a href="#" class="btn btn-primary">Order Now</a>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="col-sm-3 ">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/gnutsoup.jpeg" class="card-img-top img-fluid  image" alt="gnut">
-                    <div class="card-body">
-                        <h5 class="card-title">Gnut soup</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
+                <div class="card w-100 h-auto shadow-lg rounded item" style="width: 18rem;">
+                    <img src="images/friedokra.jpg" class="card-img-top img-fluid  image" alt="okra">
+                    <div class="card-body h-auto text-center">
+                        <div class=" d-flex justify-content-center">
+                            <h5 class="card-title ">Fried Okra<span></span></h5>
+                            <p class="price-tag">-$60</p>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3 ">
-                <div class="card " style="width: 18rem;">
-                    <img src="images/chicken.jpg" class="card-img-top img-fluid  image" alt="Chicken">
-                    <div class="card-body">
-                        <h5 class="card-title">Chicken Stew</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card " style="width: 18rem;">
+                <div class="card w-100 h-auto shadow-lg rounded item" style="width: 18rem;">
                     <img src="images/meat.jpg" class="card-img-top img-fluid  image" alt="meat">
-                    <div class="card-body">
-                        <h5 class="card-title">Meat Soup</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Order Now</a>
+                    <div class="card-body h-auto text-center">
+                        <div class=" d-flex justify-content-center">
+                            <h5 class="card-title">Meat stew</h5>
+                            <p class="price-tag">-$100</p>
+                        </div>
+            
+                        <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 ">
+                <div class="card w-100 h-auto shadow-lg rounded item" style="width: 18rem;">
+                    <img src="images/gnutsoup.jpeg" class="card-img-top img-fluid  image" alt="gnut soup">
+                    <div class="card-body h-auto text-center">
+                        <div class=" d-flex justify-content-center">
+                            <h5 class="card-title">Gnut soup</h5>
+                            <p class="price-tag">-$90</p>
+                        </div>
+            
+                        <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 ">
+                <div class="card w-100 h-auto shadow-lg rounded item" style="width: 18rem;">
+                    <img src="images/chicken.jpg" class="card-img-top img-fluid  image" alt="chicken">
+                    <div class="card-body h-auto text-center">
+                        <div class=" d-flex justify-content-center">
+                            <h5 class="card-title">Chicken soup</h5>
+                            <p class="price-tag">-$95</p>
+                        </div>
+            
+                        <a href="#" class="btn btn-primary mt-2 button2 order">Order Now</a>
                     </div>
                 </div>
             </div>
