@@ -30,6 +30,10 @@ ul{
 ul li{
     margin: 10px;
 }
+.navbar-nav a{
+    color: #4e2703;
+    font-weight: bold;
+}
 .hero p{
     font-size: 30px;
     font-family: 'Salsa',cursive;

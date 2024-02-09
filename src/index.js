@@ -25,6 +25,16 @@ for(var i=0;i<itemmenu.length;i++)
     var item=itemmenu[i];
     item.addEventListener('click',addToOrderClicked);
 }
+var placeOrder=document.getElementsByClassName('btn-order')[0];
+placeOrder.addEventListener('click',pay);
+
+var button= document.getElementsByClassName('subscribe');
+for(var i=0;i<button ;i++)
+{
+    var btn=button[i];
+    btn.addEventListener('click',Subscribe);
+}
+
 
 }
 function removeCartItem(event){
@@ -50,7 +60,6 @@ function updatePriceTotal() {
    for(var i=0;i<rows.length;i++)
     {
         var rowElement=rows[i];
-        console.log(rowElement )
        var priceElement=rowElement.getElementsByClassName('price-item')[0];
        var price = parseFloat(priceElement.textContent.replace('$', ''));
        var quantityElement=rowElement.getElementsByClassName('cartinput')[0];
@@ -115,4 +124,44 @@ function addItemToOrder(nameItem,price,imageSrc){
     cartRow.getElementsByClassName('btn-remove')[0].addEventListener('click', removeCartItem);
     cartRow.getElementsByClassName('cart-input')[0].addEventListener('change', quantityChange);
 
+}
+
+function pay()
+{
+
+    alert('Thank you!!!! your order is placed');
+   // var btn=event.target;
+     var cartItems = document.getElementsByClassName('cart-row');
+     for(var i=0;i<cartItems.length;i++)
+     {
+        var cart=cartItems[i];
+        while (cart.hasChildNodes()) {
+        cart.removeChild(cart.firstChild);
+        updatePriceTotal();
+    }
+}
+    
+}
+function Subscribe(){
+   
+    var input=document.getElementsByClassName('email-input');
+    console.log(input);
+    for(var i=0 ;i<input.length;i++)
+    {
+        var email=input[i];
+         alert('Thank you for subscribing to our newsletter 😇 !We shall keep you updated at '+ email.value);
+         email.value='';
+    }
+   
+}
+
+
+function Book(){
+   var name= prompt('Enter your name ');
+   var location= prompt('Enter your email ');
+    alert('Hello'+' '+ name +' '+'Thank you for choosing our catering services '+'\n'+'we shall immediately contact you');
+}
+
+function Send(){
+    alert('message sent');
 }
