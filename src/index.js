@@ -1,6 +1,7 @@
 
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
+   //  document.addEventListener('DOMContentLoaded',loadCartItems )
 } else {
     ready()
 }
@@ -35,12 +36,14 @@ for(var i=0;i<button ;i++)
     btn.addEventListener('click',Subscribe);
 }
 
+ attachListenersToCartItems();
 
 }
 function removeCartItem(event){
     var buttonClicked = event.target;
     buttonClicked.parentElement.parentElement.parentElement.parentElement.remove();
     updatePriceTotal();
+    // saveCartItems(); 
    
 }
 function quantityChange(event) {
@@ -49,6 +52,7 @@ function quantityChange(event) {
         input.value = 1
     }
     updatePriceTotal();
+    // saveCartItems();
    
 }
 function updatePriceTotal() {
@@ -83,17 +87,19 @@ var price=parseFloat(priceElement.textContent.replace('-$', ''));
 var imageSrc=shopItem.getElementsByClassName('card-img-top')[0].src;
 addItemToOrder(nameItem,price,imageSrc);
 updatePriceTotal();
+// saveCartItems();
 }
 
 
 function addItemToOrder(nameItem,price,imageSrc){
+    var cartFragment =document.createDocumentFragment();
     var cartRow = document.createElement('div');
     cartRow.classList.add('cart-row');
-     var cartItems = document.getElementsByClassName('item1')[0];
+    var cartItems = document.getElementsByClassName('item1')[0];
 
     var cartItemNames = cartItems.getElementsByClassName('carttitle');
-     for (var i = 0; i < cartItemNames.length; i++) {
-        if (cartItemNames[i].innerText == title) {
+    for (var i = 0; i < cartItemNames.length; i++) {
+        if (cartItemNames[i].innerText == nameItem) {
             alert('This item is already added to the cart')
             return
         }
@@ -120,10 +126,12 @@ function addItemToOrder(nameItem,price,imageSrc){
         </div>
         </div>`
     cartRow.innerHTML = cartRowContents;
-    cartItems.append(cartRow);
+    cartFragment.appendChild(cartRow);
+     
+    cartItems.appendChild(cartFragment);
     cartRow.getElementsByClassName('btn-remove')[0].addEventListener('click', removeCartItem);
     cartRow.getElementsByClassName('cart-input')[0].addEventListener('change', quantityChange);
-
+ //saveCartItems(); 
 }
 
 function pay()
@@ -139,6 +147,7 @@ function pay()
         cart.removeChild(cart.firstChild);
         updatePriceTotal();
     }
+    // saveCartItems();
 }
     
 }
@@ -165,3 +174,4 @@ function Book(){
 function Send(){
     alert('message sent');
 }
+
