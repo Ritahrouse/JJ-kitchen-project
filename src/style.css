@@ -172,6 +172,9 @@ footer p{
         padding: 5px;
     
 }
+footer a{
+    color: #f3bb58;
+}
 
 @media(max-width :900px) {
     h1 span{
